@@ -1,0 +1,17 @@
+.skill_box {
+    padding: 5px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-shrink: 0;
+    border: 1px solid var(--btn-light);
+    background-color: rgba(0, 229, 255, 0.1);
+}
+
+.skill_box p {
+    font-size: 13px;
+    margin: 0;
+    color: var(--border-cyan)
+}

@@ -1,0 +1,34 @@
+.atme_hero {
+    width: 100%;
+    height: 100%;
+}
+
+.atme_intro_section {
+    width: 100%;
+    height: 250px;
+    background-image: url(../../assets/bg_3.png);
+    background-size: 100% 800px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.atme_intro_layout {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.atme_intro_layout h4, .atme_intro_layout h1 {
+    margin: 0;
+}
+
+.atme_hero_section {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid var(--border);
+}

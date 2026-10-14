@@ -1,11 +1,14 @@
 import Navbar from "../components/Navbar";
-import Hero from "../components/Home/hero";
+import Hero from "../components/Home/Hero";
+import FeaturedProjects from "../components/Home/FeaturedProjects";
+import Contact from "../components/Home/Contact";
 
-function Home() {
+function Home({setPage}) {
   return (
     <>
-      <Navbar/>
-      <Hero/>
+      <Hero setPage={setPage}/>
+      <FeaturedProjects setPage={setPage}/>
+      <Contact/>
     </>
   );
 }

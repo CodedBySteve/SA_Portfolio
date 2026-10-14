@@ -3,17 +3,17 @@
   height: 100vh;
   width: 100%;
   background-image: url(../../assets/bg_3.png);
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.main {
+.hr_main {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-inline-start: 10%;
+  margin-left: 10%;
   position: absolute;
   top: 28%;
 }
@@ -48,14 +48,41 @@
   margin: 0;
 }
 
-h1 {
+.hr_main h2, #hero_desc {
+  color: var(--text);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.hr_main h1 {
   margin-top: 28px;
   margin-bottom: 8px;
 }
 
-h2 {
+.hr_main h2 {
   font-family: var(--font-mono);
   margin: 0;
+}
+
+.role {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  margin: 0;
+}
+
+#role_desc {
+  font-family: var(--font-mono);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#line {
+  width: 40px;
+  height: 1px;
+  background-color: var(--special);
 }
 
 #hero_desc {
@@ -69,15 +96,6 @@ h2 {
 .btn_view_pjs {
   padding: 15px 20px;
   margin-top: 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--btn);
-  box-shadow: var(--btn-shadow);
-  color: black;
-  font-family: var(--body);
-  font-weight: 500;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 .btn_view_pjs:hover {

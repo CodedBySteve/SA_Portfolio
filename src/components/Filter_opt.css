@@ -1,0 +1,17 @@
+.box_style {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 15px;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--text);
+    transition: 0.5s;
+    font-size: 13px;
+}
+
+.box_style:hover {
+    border:1px solid var(--btn-light);
+    background-color: rgba(0, 229, 255, 0.1);
+    color: var(--text-cyan);
+}

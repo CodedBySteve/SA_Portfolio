@@ -1,0 +1,75 @@
+.c_hero {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c_main {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background-color: var(--sub-bg);
+}
+
+.Contact h4 {
+    margin: 0;
+}
+
+.Contact h1 {
+    margin: 10px 0;
+}
+
+.c_main p {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.c_btn_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn_email, .btn_linkedin, .btn_github {
+    padding: 12px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_email img, .btn_linkedin img, .btn_github img{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.btn_email:hover, .btn_linkedin:hover, .btn_github:hover {
+  box-shadow: var(--btn-hover);
+  transition: 0.3s;
+}
+
+.c_btn_layout a {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--btn);
+    box-shadow: var(--btn-shadow);
+    color: black;
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}

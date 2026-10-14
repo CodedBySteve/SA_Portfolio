@@ -1,4 +1,5 @@
 .nav {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -10,8 +11,11 @@
 
 .nitem {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 60px;
-    
+    color: var(--text);
+    width: fit-content;
 }
 
 .logo {
@@ -44,15 +48,30 @@
     
 }
 
-a {
-    text-decoration: none;
-    text-decoration-color: transparent;
-    color: inherit;
+.nitem a {  
+    padding: 6px 6px;
 }
+
+.nitem a::after {
+    content:"";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--btn);
+    transition: width 0.2s ease;
+
+}
+
 a:hover {
     cursor: pointer; 
-    color: rgb(35, 134, 205);
-    border-bottom: 2px solid;
+    color: var(--btn);
+    transition: 1s;
 }
+
+.nitem a:hover:after {
+    width: 100%;
+}
+
+
 
 
