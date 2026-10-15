@@ -12,6 +12,7 @@ function Hero_aboutme() {
             <div className="atme_hero_section">
                 
 
+
             </div>
         </section>
     );

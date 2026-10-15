@@ -9,7 +9,7 @@ function Hero({setPage}) {
                 <div className="circle"></div>
                 <p id="status">OPEN TO OPPORTUNITIES</p>
             </div>
-            <h2>Hello I'm</h2>
+            <h2>HELLO I'M</h2>
             <h1>Steve Montenegro Aguilar</h1>
             <div className="role">
                 <div id="line"/>

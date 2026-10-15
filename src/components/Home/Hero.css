@@ -30,7 +30,7 @@
   gap: 15px;
   background-color: rgba(0, 229, 255,0.1);
   padding: 2px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .circle { 
@@ -38,6 +38,7 @@
   height: 8px;
   background-color: var(--green);
   border-radius: 50%; 
+  animation: fadeInOut 2.5s ease-in-out infinite;
 }
 
 #status {
@@ -55,8 +56,8 @@
 }
 
 .hr_main h1 {
-  margin-top: 28px;
-  margin-bottom: 8px;
+  margin-top: 6px;
+  margin-bottom: 0px;
 }
 
 .hr_main h2 {
@@ -69,18 +70,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  gap: 5px;
-  margin: 0;
+  gap: 12px;
+  margin: 10px 0;
 }
 
 #role_desc {
   font-family: var(--font-mono);
   font-weight: 300;
   font-size: 18px;
+  margin: 0;
 }
 
 #line {
-  width: 40px;
+  width: 32px;
   height: 1px;
   background-color: var(--special);
 }
@@ -101,4 +103,10 @@
 .btn_view_pjs:hover {
   box-shadow: var(--btn-hover);
   transition: 0.3s;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {opacity: 0.3; transform: scale(0.8)}
+  50% {opacity: 1; transform: scale(1)}
+  
 }

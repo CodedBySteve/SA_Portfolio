@@ -2,10 +2,13 @@ import "./Hero_prj.css"
 import ProjectCard from "../ProjectCard";
 import PROJECTS from "../../data/projects"
 import Filter_opt from "../Filter_opt";
+import { useState } from "react";
+
 
 
 function Hero_prj() {
     const categories = [...new Set(PROJECTS.map(project => project.category)), "All"];
+    const [selectedCategory, setSelectedCategory] = useState("All");
     return (
         <section className="prj_hero">
             <div className="intro_section">
@@ -17,12 +20,23 @@ function Hero_prj() {
             </div>
             <div className="filter_section">
                 <div className="filter_layout">
-                    {categories.sort().map(category => <Filter_opt key={category} category={category}/>)}
+                    {
+                    categories.sort().map(category => (
+                    <Filter_opt 
+                        key={category} 
+                        category={category} 
+                        selected= {selectedCategory === category}  
+                        onSelect={() => setSelectedCategory(category)}/>
+                    ))
+                    }
                 </div>
             </div>
             <div className="prjs_section">
                 <div className="prjs_layout">
-                    {PROJECTS.map((project) => <ProjectCard key={project.id} project={project}/>)}
+                    {selectedCategory === "All" 
+                    ? PROJECTS.map((project) => <ProjectCard key={project.id} project={project}/>) 
+                    : PROJECTS.filter((project) => project.category === selectedCategory).map((project) => <ProjectCard key={project.id} project={project}/>)
+                    }
                 </div>
             </div>
         </section>

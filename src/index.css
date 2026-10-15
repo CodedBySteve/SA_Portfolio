@@ -19,7 +19,7 @@
   --btn-light: rgba(0, 229, 255,0.2);
   --btn-shadow: 0px 0px 40px 1px var(--btn-light);
   --btn-hover: 0px 0px 40px 10px var(--btn-light);
-  --green: #22C45E;
+  --green: rgba(34, 196, 94, 1);
   --special: #00E5FF;
 
   --font-body: 'Inter', sans-serif; /* body font text */
